@@ -11,9 +11,9 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="statemap.html">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -67,7 +67,6 @@
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button">Поиск гостиницы в Седоне</button>
-        <!-- здесь будет форма поиска гостиниц -->
         <!-- здесь будет интерактивная карта -->
       </div>
     </main>
@@ -80,8 +79,28 @@
         </ul>
         <p class="footer-copyright">
           <b>Website by</b>
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
         </p>
     </footer>
+    <!-- Всплывающее окно поиска гостиницы - начало блока -->
+    <section class="modal modal-search-form">
+      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+      <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
+        <label>Дата заезда
+          <input type="text" name="arrival-date" placeholder="24 апреля 2017">
+        </label>
+        <label>Дата выезда
+          <input type="text" name="departure-date" placeholder="4 июля 2017">
+        </label>
+        <label>Взрослые
+          <input type="text" name="adult-guests" placeholder="2" pattern="[0-9]{1}">
+        </label>
+        <label>Дети
+          <input type="text" name="children-guests" placeholder="0" pattern="[0-9]{1}">
+        </label>
+        <button type="submit">Найти</button>
+      </form>
+    </section>
+    <!-- Всплывающее окно поиска гостиницы - конец блока -->
   </body>
 </html>
