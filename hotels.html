@@ -11,9 +11,9 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="statemap.html">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -21,9 +21,48 @@
       <main class="container">
         <h1 class="visually-hidden">Выбор гостиницы в Седоне</h1>
         <section class="hotels">
+          <form class="hotel-filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Инфраструктура</legend>
+              <label>
+                <input type="checkbox" class="hotel-filter-checkbox visually-hidden" name="pool" checked> Бассейн
+            </label>
+            <label>
+              <input type="checkbox" class="hotel-filter-checkbox visually-hidden" name="parking"> Парковка
+            </label>
+            <label>
+              <input type="checkbox" class="hotel-filter-checkbox visually-hidden" name="wi-fi"> Wi-Fi
+            </label>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья</legend>
+              <label>
+                <input type="checkbox" class="hotel-filter-checkbox visually-hidden" name="hotel" checked> Гостиница
+              </label>
+              <label>
+                <input type="checkbox" class="hotel-filter-checkbox visually-hidden" name="motel" checked> Мотель
+              </label>
+              <label>
+                <input type="checkbox" class="hotel-filter-checkbox visually-hidden" name="apartments" checked> Апартаменты
+              </label>
+            </fieldset>
+            <fieldset>
+              <input type="text" placeholder="от 0" pattern="[0-9]{4}">
+              <input type="text" placeholder="до 3000" pattern="[0-9]{4}">
+              <input type="range" class="hotel-filter-range visually-hidden" name="hotel-filter-cost" min="0" max="5000" step="500">
+              <button class="hotel-filter-button" type="submit">Показать</button>
+            </fieldset>
+          </form>
+          <div class="hotel-sorting">
+            <b>Найдено: 3</b>
+            <span>Сортировка:</span>
+            <a href="#" class="sorting-toggle">По цене</a>
+            <a href="#" class="sorting-toggle">По типу</a>
+            <a href="#" class="sorting-toggle">По рейтингу</a>
+          </div>
           <div class="hotels-item">
             <h2>Amara Resort &#38; Spa</h2>
-            <img src ="img/jpg/amara-resort.jpg" width="135" height="90" alt="Amara Resort &#38; SPA">
+            <img src ="img/jpg/amara-resort.jpg" width="135" height="90" alt="Гостиница Amara Resort &#38; SPA">
             <span class="hotels-type">Гостиница</span>
             <span class="hotels-price">от 4000 р.</span>
             <a href="#" class="hotels-more">Подробнее</a>
@@ -32,7 +71,7 @@
           </div>
           <div class="hotels-item">
             <h2>Desert Quail Inn</h2>
-            <img src ="img/jpg/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+            <img src ="img/jpg/desert-quail-inn.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             <span class="hotels-type">Мотель</span>
             <span class="hotels-price">от 3000 р.</span>
             <a href="#" class="hotels-more">Подробнее</a>
@@ -41,7 +80,7 @@
           </div>
           <div class="hotels-item">
             <h2>Villas at Poco Diablo</h2>
-            <img src ="img/jpg/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
+            <img src ="img/jpg/villas-at-poco-diablo.jpg" width="135" height="90" alt="Апартаменты Villas At Poco Diablo">
             <span class="hotels-type">Апартаменты</span>
             <span class="hotels-price">от 2000 р.</span>
             <a href="#" class="hotels-more">Подробнее</a>
@@ -59,7 +98,7 @@
           </ul>
           <p class="footer-copyright">
             <b>Website by</b>
-            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
           </p>
       </footer>
     </body>
