@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+
+}
+
+/* Переопределение стилей для body внутренней страницы */
+
+.hotels-page {
+  color: #000000;
+
+  background-color: #fefefe;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:focus,
+.main-navigation a:active {
+  color: #cacaca;
+}
+
+.slogan {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-sublist {
+  list-style: none;
+
+  background-color: #ffffff;
+}
+
+.advantage-blue {
+  background-color: #81b3d2;
+}
+
+.advantage-grey {
+  background-color: #eeeeee;
+}
+
+.advantages-item h3 {
+  font-size: 21px;
+  line-height:21px;
+}
+
+.sublist-item h4 {
+  font-size: 21px;
+  line-height:21px
+}
+
+.search-form b {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center; /* Не могу понять, почему не работает? */
+}
+
+.search-form p {
+  line-height: 24px;
+  text-align: center;
+}
+
+.search-open-button {
+  font-size: 21px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+
+.search-open-button:hover {
+  background-color: #604e43;
+}
+
+.search-open-button:focus,
+.search-open-button:active {
+ color: rgba(255, 255, 255, 0.3);
+ background-color: #503e33;
+ outline: none;
+
+}
+
+/* Форма поиска на главной временно скрыта - её будем стилизовать позже */
+.modal-search-form {
+  display: none;
+}
+
+.main-footer{
+  background-color: rgba(254, 254, 254, 0.9);
+}
+
+.hashtag-link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:focus,
+.social-button:active {
+  background-color: #5496bd;
+}
+
+/* Стили для внутренней страницы - начало */
+
+.hotels-item h2 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.hotels-type,
+.hotels-price{
+ font-size: 14px;
+ line-height: 21px;
+}
+
+.hotels-more {
+  color: #ffffff;
+  font-weight: 700;
+
+  background-color: #81b3d2;
+}
+
+.hotels-more:hover {
+  background-color: #669ec0;
+}
+
+.hotels-more:focus,
+.hotels-more:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+  outline: none;
+}
+
+.hotels-book {
+  color: #ffffff;
+  font-weight: 700;
+
+  background-color: #766357;
+}
+
+.hotels-book:hover {
+  background-color: #604e43;
+}
+
+.hotels-book:focus,
+.hotels-book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+  outline: none;
+}
+
+.hotels-rating {
+  color: #666666;
+  font-size: 14px;
+  line-height:21px;
+
+  background-color: #f2f2f2;
+}
+
+/* Стили для внутренней страницы - конец */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
