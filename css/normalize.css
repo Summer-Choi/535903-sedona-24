@@ -347,3 +347,6 @@ template {
 [hidden] {
   display: none;
 }
+
+nav ul {
+    list-style:none;

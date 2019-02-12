@@ -12,6 +12,14 @@ body {
 
 }
 
+/* Переопределение стилей для body внутренней страницы */
+
+.hotels-page {
+  color: #000000;
+
+  background-color: #fefefe;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,21 +33,17 @@ a {
   background-color: #ffffff;
 }
 
-.main-navigation a,
-.hotels-title-link {
+.main-navigation a {
   color: #000000;
 }
 
-.main-navigation a:hover,
-.hotels-title-link:hover {
+.main-navigation a:hover {
   color: #81b3d2;
 }
 
 .main-navigation a:focus,
-.main-navigation a:active,
-.hotels-title-link:focus,
-.hotels-title-link:active {
-  color: rgba(0, 0, 0, 0.3);
+.main-navigation a:active {
+  color: #cacaca;
 }
 
 .slogan {
@@ -52,30 +56,21 @@ a {
 .advantages h2 {
   font-weight: 400;
   font-size: 14px;
-  color: #333333;
   line-height: 26px;
   text-align: center;
 }
 
 .advantages-item {
-  line-height: 21px;
   text-align: center;
 }
 
 .advantages-sublist {
   list-style: none;
-  color: #000000;
 
   background-color: #ffffff;
 }
 
-.sublist-item p {
-  color: #333333;
-}
-
 .advantage-blue {
-  color: #ffffff;
-
   background-color: #81b3d2;
 }
 
@@ -85,25 +80,21 @@ a {
 
 .advantages-item h3 {
   font-size: 21px;
-  line-height: 21px;
+  line-height:21px;
 }
 
 .sublist-item h4 {
   font-size: 21px;
-  line-height: 21px
-}
-
-.search-form {
-  text-align: center;
+  line-height:21px
 }
 
 .search-form b {
   font-size: 30px;
   line-height: 36px;
+  text-align: center; /* Не могу понять, почему не работает? */
 }
 
 .search-form p {
-  color: #333333;
   line-height: 24px;
   text-align: center;
 }
@@ -135,12 +126,11 @@ a {
   display: none;
 }
 
-.main-footer {
+.main-footer{
   background-color: rgba(254, 254, 254, 0.9);
 }
 
 .hashtag-link {
-  color: #000000;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -165,7 +155,6 @@ a {
 
 /* Стили для внутренней страницы - начало */
 
-
 .hotels-item h2 {
   font-size: 21px;
   font-weight: 700;
@@ -173,8 +162,7 @@ a {
 }
 
 .hotels-type,
-.hotels-price {
- color: #333333;
+.hotels-price{
  font-size: 14px;
  line-height: 21px;
 }
