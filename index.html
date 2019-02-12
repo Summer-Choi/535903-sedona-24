@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -29,16 +32,16 @@
               <h3>Настоящий городок</h3>
               <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
               <img src="img/jpg/real-town.jpg" width="800" height="256" alt="Уютные улочки приглашают прогуляться">
-              <ul>
-                <li>
+              <ul class="advantages-sublist">
+                <li class="sublist-item">
                   <h4>Жильё</h4>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li>
+                <li class="sublist-item">
                   <h4>Еда</h4>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li>
+                <li class="sublist-item">
                   <h4>Сувениры</h4>
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
@@ -66,7 +69,7 @@
       <div class="search-form">
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button type="button" class="search-open-button">Поиск гостиницы в Седоне</button>
         <!-- Всплывающее окно поиска гостиницы - начало блока -->
         <section class="modal modal-search-form">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
@@ -131,24 +134,24 @@
     </div>
     </main>
     <footer class="main-footer">
-      <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
+      <a href="https://www.instagram.com/explore/tags/visitsedona/" class="hashtag-link">#visitsedona</a>
         <ul class="footer-social">
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button social-button-twitter" href="#">
               <span class="visually-hidden">
                 Твиттер
               </span>
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button social-button-facebook" href="#">
               <span class="visually-hidden">
                 Фейсбук
               </span>
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button social-button-youtube" href="#">
               <span class="visually-hidden">
                 YouTube
               </span>
@@ -157,7 +160,9 @@
         </ul>
         <p class="footer-copyright">
           <b>Website by</b>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+          </a>
         </p>
     </footer>
   </body>
