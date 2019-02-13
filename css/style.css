@@ -12,14 +12,6 @@ body {
 
 }
 
-/* Переопределение стилей для body внутренней страницы */
-
-.hotels-page {
-  color: #000000;
-
-  background-color: #fefefe;
-}
-
 a {
   text-decoration: none;
 }
@@ -33,17 +25,21 @@ a {
   background-color: #ffffff;
 }
 
-.main-navigation a {
+.main-navigation a,
+.hotels-title-link {
   color: #000000;
 }
 
-.main-navigation a:hover {
+.main-navigation a:hover,
+.hotels-title-link:hover {
   color: #81b3d2;
 }
 
 .main-navigation a:focus,
-.main-navigation a:active {
-  color: #cacaca;
+.main-navigation a:active,
+.hotels-title-link:focus,
+.hotels-title-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .slogan {
@@ -56,45 +52,62 @@ a {
 .advantages h2 {
   font-weight: 400;
   font-size: 14px;
+  color: #333333;
   line-height: 26px;
   text-align: center;
 }
 
 .advantages-item {
   text-align: center;
+  line-height: 21px;
+}
+
+.advantage-blue {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.advantages-item p {
+  color: #333333;
 }
 
 .advantages-sublist {
   list-style: none;
-
   background-color: #ffffff;
 }
 
-.advantage-blue {
-  background-color: #81b3d2;
+.sublist-item p {
+  color: #333333;
 }
-
+.sublist-item {
+  color: #000000;
+}
 .advantage-grey {
   background-color: #eeeeee;
 }
 
 .advantages-item h3 {
   font-size: 21px;
-  line-height:21px;
+  line-height: 21px;
 }
 
 .sublist-item h4 {
   font-size: 21px;
-  line-height:21px
+  line-height: 21px
+}
+
+.search-form {
+    text-align: center;
 }
 
 .search-form b {
   font-size: 30px;
   line-height: 36px;
-  text-align: center; /* Не могу понять, почему не работает? */
 }
 
 .search-form p {
+  color: #333333;
   line-height: 24px;
   text-align: center;
 }
@@ -126,11 +139,12 @@ a {
   display: none;
 }
 
-.main-footer{
+.main-footer {
   background-color: rgba(254, 254, 254, 0.9);
 }
 
 .hashtag-link {
+  color: #000000;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -162,9 +176,10 @@ a {
 }
 
 .hotels-type,
-.hotels-price{
- font-size: 14px;
- line-height: 21px;
+.hotels-price {
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .hotels-more {
@@ -206,7 +221,7 @@ a {
 .hotels-rating {
   color: #666666;
   font-size: 14px;
-  line-height:21px;
+  line-height: 21px;
 
   background-color: #f2f2f2;
 }
