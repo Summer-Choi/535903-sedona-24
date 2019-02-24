@@ -62,14 +62,20 @@ a {
   line-height: 21px;
 }
 
-.advantage-blue {
-  color: #ffffff;
+.advantages-item p {
+  color: #333333;
+}
 
+.advantage-blue {
   background-color: #81b3d2;
 }
 
-.advantages-item p {
-  color: #333333;
+.advantage-blue h3 {
+  color: #ffffff;
+}
+
+.advantage-blue p {
+  color: #ffffff;
 }
 
 .advantages-sublist {
@@ -114,6 +120,7 @@ a {
 
 .search-open-button {
   font-size: 21px;
+  font-weight: 700;
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
