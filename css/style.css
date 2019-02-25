@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,6 +26,13 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+}
+
 .main-navigation {
   font-size: 14px;
   font-weight: 700;
@@ -23,6 +40,37 @@ a {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.site-navigation {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.site-navigation li {
+  width: 240px;
+}
+
+.site-navigation li:nth-child(1) {
+  padding-left: 72px;
+  text-align: left;
+}
+
+.site-navigation li:nth-child(2) {
+  padding-left: 72px;
+  text-align: left;
+  margin-right: auto;
+}
+
+.site-navigation li:nth-child(3) {
+  padding-right: 72px;
+  text-align: right;
+}
+
+.site-navigation li:nth-child(4) {
+  padding-right: 72px;
+  text-align: right;
 }
 
 .main-navigation a,
@@ -42,11 +90,41 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.intro {
+ height: 510px;
+ background-color: #8695a0;
+ background-image: url(../img/svg/intro-mask.svg), url(../img/jpg/sedona-overview.jpg);
+ background-position: left 50% bottom -3px, 0px -56px;
+ background-repeat: no-repeat;
+}
+
 .slogan {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(2){
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-content-wrapper {
+  width: 400px;
+}
+
+.advantages-image-wrapper {
+  width: 800px;
 }
 
 .advantages h2 {
@@ -57,12 +135,17 @@ a {
   text-align: center;
 }
 
+.advantages ul {
+  list-style: none;
+}
+
 .advantages-item {
   text-align: center;
   line-height: 21px;
 }
 
-.advantages-item p {
+.advantages-item p,
+.advantages-item span {
   color: #333333;
 }
 
@@ -70,26 +153,34 @@ a {
   background-color: #81b3d2;
 }
 
-.advantage-blue h3 {
-  color: #ffffff;
-}
-
+.advantage-blue h3,
+.advantage-blue span,
 .advantage-blue p {
   color: #ffffff;
 }
 
 .advantages-sublist {
+  display: flex;
+
+  padding: 0;
   list-style: none;
+
   background-color: #ffffff;
 }
 
 .sublist-item p {
   color: #333333;
 }
+
 .sublist-item {
+  width: 400px;
+  min-height: 330px;
   color: #000000;
 }
+
 .advantage-grey {
+  width: 400px;
+
   background-color: #eeeeee;
 }
 
@@ -146,8 +237,21 @@ a {
   display: none;
 }
 
+.map {
+  width: 1200px;
+  height: 475px;
+  background-image: url(../img/jpg/map.jpg);
+}
+
 .main-footer {
+  display: flex;
+
   background-color: rgba(254, 254, 254, 0.9);
+}
+
+.footer-wrapper {
+  width: 400px;
+  text-align: center;
 }
 
 .hashtag-link {
@@ -159,6 +263,9 @@ a {
 
 .footer-social {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 400px;
 }
 
 .social-button {
