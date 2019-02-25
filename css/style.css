@@ -94,7 +94,7 @@ a {
  height: 510px;
  background-color: #8695a0;
  background-image: url(../img/svg/intro-mask.svg), url(../img/jpg/sedona-overview.jpg);
- background-position: left 50% bottom -3px, 0px -56px;
+ background-position: left 50% bottom, 0px -56px;
  background-repeat: no-repeat;
 }
 
