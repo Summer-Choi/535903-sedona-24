@@ -31,9 +31,14 @@ img {
   height: auto;
 }
 
+.main-header {
+  position: relative;
+}
+
 .main-header-logo {
   position: absolute;
-  right: 690px;
+  right: 530px;
+  top: -5px;
 }
 
 .container {
@@ -323,7 +328,7 @@ img {
 }
 
 .search-form {
-    text-align: center;
+  text-align: center;
 }
 
 .search-form b {
@@ -362,24 +367,170 @@ img {
  color: rgba(255, 255, 255, 0.3);
  background-color: #503e33;
  outline: none;
-
 }
 
-/* Форма поиска на главной временно скрыта - её будем стилизовать позже */
-.modal-search-form {
-  display: none;
-}
-
-/*
 .modal-search-form {
   width: 570px;
   min-height: 395px;
+  padding: 55px;
   position: absolute;
   right: 315px;
-
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
   background-color: white;
 }
-*/
+
+.hotel-search-form {
+  width: 460px;
+  height: 275px;
+}
+
+.hotel-search-form div {
+  text-align: left;
+}
+
+.search-form-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.date-wrapper {
+  margin-bottom: 30px;
+}
+
+.hotel-search-form label[for="arrival-date"] {
+  padding-right: 20px;
+}
+
+.hotel-search-form label[for="departure-date"] {
+  padding-right: 17px;
+}
+
+.hotel-search-form label[for="adult-guests"] {
+  padding-right: 42px;
+}
+
+.hotel-search-form label[for="children-guests"] {
+  padding-right: 28px;
+  margin-left: auto;
+}
+
+.hotel-search-form input[type="text"] {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.hotel-search-form input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.hotel-search-form input[type="text"]:focus,
+.hotel-search-form input[type="text"]:active {
+  background-color: #ffffff;
+  outline: 3px solid #e5e5e5;
+}
+
+.hotel-search-form input[name="arrival-date"],
+.hotel-search-form input[name="departure-date"] {
+  width: 308px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hotel-search-form .calendar-button {
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.hotel-search-form .calendar-button:hover {
+  background-color: #ebebeb;
+}
+
+.hotel-search-form .calendar-button:focus,
+.hotel-search-form .calendar-button:active {
+  background-color: #ffffff;
+  outline: 3px solid #e5e5e5;
+}
+
+.hotel-search-form .calendar-button path {
+  fill: #cacaca;
+}
+
+.hotel-search-form .calendar-button:hover path {
+  fill: #000000;
+}
+
+.hotel-search-form .calendar-button:focus path,
+.hotel-search-form .calendar-button:active path {
+  fill: #81b3d2;
+}
+
+.hotel-search-form input[name="adult-guests"],
+.hotel-search-form input[name="children-guests"] {
+  width: 38px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hotel-guest-number {
+  width: 38px;
+  height: 38px;
+  color: #a9a9a9;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.hotel-guest-number:hover {
+  color: #000000;
+}
+
+.hotel-guest-number:focus,
+.hotel-guest-number:active {
+  color: #81b3d2;
+  outline: none;
+}
+
+.hotel-search-form button[type="submit"] {
+  padding-left: 197px;
+  padding-right: 197px;
+  padding-top:17px;
+  padding-bottom: 17px;
+  margin-top: 55px;
+  font-size:21px;
+  line-height:26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.hotel-search-form button[type="submit"]:hover {
+  background-color: #669ec0;
+}
+
+.hotel-search-form button[type="submit"]:focus,
+.hotel-search-form button[type="submit"]:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
 
 .map {
   position: relative;
@@ -515,11 +666,11 @@ img {
 
 .hotel-filter-form {
   width: 1200px;
-  min-height: 220px;
+  min-height: 215px;
   display: flex;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 32px;
+  padding-top: 25px;
 
   background-image: url(../img/jpg/filter-background.jpg);
   background-color: #8695a0;
@@ -536,15 +687,18 @@ img {
 
 .hotel-filter-form legend {
   font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .hotels-infrastructure,
 .hotels-accomodation-type {
-  widht: 140px;
+  width: 140px;
+  margin-left: 30px;
 }
 
 .hotels-infrastructure {
-  margin-right: 115px;
+  margin-right: 71px;
 }
 
 .hotels-accomodation-type {
@@ -557,10 +711,32 @@ img {
 
 .hotels-checkbox-wrapper {
   list-style: none;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
 }
 
 .hotels-checkbox-wrapper li {
   margin-bottom: 30px;
+}
+
+.hotel-filter-form label {
+  position: relative;
+}
+
+.hotel-filter-form label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/svg/checkbox-off.svg);
+  background-repeat: no-repeat;
+}
+
+.hotel-filter-form input:checked + label::before {
+  background-image: url(../img/svg/checkbox-on.svg);
 }
 
 .hotel-sorting {
@@ -646,8 +822,8 @@ img {
   display: flex;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   border-top: solid 1px #e5e5e5;
 }
 
@@ -656,8 +832,8 @@ img {
 }
 
 .hotels-image-wrapper {
-  align-self: flex-end;
   padding-right: 30px;
+  padding-top: 3px;
 }
 
 .hotels-item h2 {
@@ -665,8 +841,7 @@ img {
   font-weight: 700;
   line-height: 26px;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .hotels-wrapper {
@@ -676,14 +851,12 @@ img {
 
 .hotels-info-wrapper {
   display: flex;
+  margin-bottom: 14px;
 }
 
 .hotels-link-wrapper {
   display: flex;
-}
-
-.hotels-more {
-  margin-right: 8px;
+  align-items: flex-start;
 }
 
 .hotels-type {
@@ -706,8 +879,9 @@ img {
   font-weight: 700;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  margin-right: 8px;
 
   background-color: #81b3d2;
 }
@@ -728,8 +902,8 @@ img {
   font-weight: 700;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 5px;
 
   background-color: #766357;
 }
@@ -745,6 +919,28 @@ img {
   outline: none;
 }
 
+.hotels-rating-stars {
+ height: 17px;
+ background-image: url(../img/svg/star.svg);
+ background-repeat: space;
+ margin-bottom: 45px;
+}
+
+.rating-amara-resort {
+  margin-left: 25px;
+  width: 90px;
+}
+
+.rating-desert-quail-inn {
+  margin-left: 50px;
+  width: 65px;
+}
+
+.rating-villas-diablo {
+  margin-left: 75px;
+  width: 40px;
+}
+
 .hotels-rating {
   color: #666666;
   font-size: 14px;
@@ -753,6 +949,7 @@ img {
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin: 0;
 
   background-color: #f2f2f2;
 }
