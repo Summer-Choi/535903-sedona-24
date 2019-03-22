@@ -89,10 +89,9 @@ img {
   text-align: right;
 }
 
-.main-navigation a {
-  display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+.main-navigation li {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .main-navigation a,
@@ -181,6 +180,7 @@ img {
 .advantages-content-wrapper p {
   padding-left: 45px;
   padding-right: 45px;
+  margin-top: 20px;
 }
 
 .advantages-image-wrapper {
@@ -237,6 +237,7 @@ img {
   padding-left: 65px;
   padding-right: 65px;
   padding-top: 10px;
+  margin-top: 10px;
 }
 
 .advantages-sublist {
@@ -324,7 +325,8 @@ img {
 
 .sublist-item h4 {
   font-size: 21px;
-  line-height: 21px
+  line-height: 21px;
+  margin-bottom: 22px;
 }
 
 .search-form {
@@ -343,15 +345,18 @@ img {
   line-height: 24px;
   text-align: center;
   padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .search-open-button {
+  position: relative;
+  z-index: 2;
   font-size: 21px;
   font-weight: 700;
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 30px 140px;
+  padding: 31px 140px;
   margin-top: 35px;
 
   background-color: #766357;
@@ -374,12 +379,14 @@ img {
   min-height: 395px;
   padding: 55px;
   position: absolute;
+  z-index: 1;
   right: 315px;
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
   text-align: left;
   background-color: white;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .hotel-search-form {
@@ -392,34 +399,24 @@ img {
 }
 
 .search-form-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .date-wrapper {
   margin-bottom: 30px;
 }
 
-.hotel-search-form label[for="arrival-date"] {
-  padding-right: 20px;
-}
-
-.hotel-search-form label[for="departure-date"] {
-  padding-right: 17px;
-}
-
-.hotel-search-form label[for="adult-guests"] {
-  padding-right: 42px;
-}
-
-.hotel-search-form label[for="children-guests"] {
-  padding-right: 28px;
-  margin-left: auto;
+.num-field-wrapper {
+  width: 114px;
+  position: relative;
 }
 
 .hotel-search-form input[type="text"] {
   background-color: #f2f2f2;
-  border: none;
+  border: 3px solid transparent;
 }
 
 .hotel-search-form input[type="text"]:hover {
@@ -429,14 +426,15 @@ img {
 .hotel-search-form input[type="text"]:focus,
 .hotel-search-form input[type="text"]:active {
   background-color: #ffffff;
-  outline: 3px solid #e5e5e5;
+  border: 3px solid #e5e5e5;
+  outline: none;
 }
 
 .hotel-search-form input[name="arrival-date"],
 .hotel-search-form input[name="departure-date"] {
-  width: 308px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  width: 346px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 12px;
   padding-right: 12px;
   font-weight: 700;
@@ -444,21 +442,19 @@ img {
 }
 
 .hotel-search-form .calendar-button {
+  position: absolute;
+  left: 422px;
+  top: 1px;
   width: 38px;
   height: 38px;
   margin: 0;
   border: none;
-  background-color: #f2f2f2;
-}
-
-.hotel-search-form .calendar-button:hover {
-  background-color: #ebebeb;
+  background-color: transparent;
 }
 
 .hotel-search-form .calendar-button:focus,
 .hotel-search-form .calendar-button:active {
-  background-color: #ffffff;
-  outline: 3px solid #e5e5e5;
+  outline: none;
 }
 
 .hotel-search-form .calendar-button path {
@@ -476,24 +472,34 @@ img {
 
 .hotel-search-form input[name="adult-guests"],
 .hotel-search-form input[name="children-guests"] {
-  width: 38px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 12px;
-  padding-right: 12px;
+  width: 114px;
+  position: relative;
+  z-index: 1;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 45px;
+  padding-right: 45px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hotel-guest-number {
   width: 38px;
   height: 38px;
+  position: absolute;
+  z-index: 2;
   color: #a9a9a9;
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
   background-color: #f2f2f2;
   border: none;
+}
+
+.guest-plus {
+  top: 0px;
+  left: 76px;
 }
 
 .hotel-guest-number:hover {
@@ -543,6 +549,8 @@ img {
   display: flex;
   min-height: 120px;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   background-color: rgba(254, 254, 254, 0.9);
 }
@@ -639,9 +647,8 @@ img {
 
 .footer-copyright {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding-right: 100px;
 }
 
 .footer-copyright b {
@@ -653,12 +660,12 @@ img {
   height: 41px;
 }
 
-.academy-logo path:hover {
+.academy-logo:hover path {
   fill: #81b3d2;
 }
 
-.academy-logo path:focus,
-.academy-logo path:active {
+.academy-logo:focus path,
+.academy-logo:active path {
   fill: #bdbbbc;
 }
 
@@ -780,7 +787,7 @@ img {
 .hotel-sorting-toggle:focus,
 .hotel-sorting-toggle:active {
   color: #000000;
-  border-bottom: 1px dotted #81b3d2;
+  border: none;
 }
 
 .hotel-sorting-toggle.current {
@@ -928,7 +935,7 @@ img {
 
 .rating-amara-resort {
   margin-left: 25px;
-  width: 90px;
+  width: 86px;
 }
 
 .rating-desert-quail-inn {
