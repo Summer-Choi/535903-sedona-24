@@ -394,8 +394,12 @@ img {
   height: 275px;
 }
 
-.hotel-search-form div {
-  text-align: left;
+.hotel-search-form label {
+  width: 112px;
+}
+
+.hotel-search-form label[for="children-guests"] {
+  padding-left: 49px;
 }
 
 .search-form-wrapper {
@@ -502,14 +506,43 @@ img {
   left: 76px;
 }
 
-.hotel-guest-number:hover {
-  color: #000000;
+.guest-minus::before,
+.guest-plus::before {
+  content: "";
+  width: 12px;
+  height: 3px;
+  position: absolute;
+  z-index: 3;
+  top: 17px;
+  left: 11px;
+  background-color: #a9a9a9;
+}
+
+.guest-plus::after {
+  content: "";
+  width: 12px;
+  height: 3px;
+  position: absolute;
+  z-index: 3;
+  top: 17px;
+  left: 11px;
+  transform: rotate(90deg);
+  background-color: #a9a9a9;
 }
 
 .hotel-guest-number:focus,
 .hotel-guest-number:active {
-  color: #81b3d2;
   outline: none;
+}
+
+.hotel-guest-number:hover::before,
+.hotel-guest-number:hover::after {
+  background-color: #000000;
+}
+
+.hotel-guest-number:focus::before,
+.hotel-guest-number:focus::after {
+  background-color: #80b2d3;
 }
 
 .hotel-search-form button[type="submit"] {
@@ -677,7 +710,7 @@ img {
   display: flex;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 25px;
+  padding-top: 27px;
 
   background-image: url(../img/jpg/filter-background.jpg);
   background-color: #8695a0;
@@ -690,6 +723,7 @@ img {
 
 .hotel-filter-form fieldset {
   border: none;
+  padding-bottom: 2px;
 }
 
 .hotel-filter-form legend {
@@ -701,11 +735,12 @@ img {
 .hotels-infrastructure,
 .hotels-accomodation-type {
   width: 140px;
-  margin-left: 30px;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .hotels-infrastructure {
-  margin-right: 71px;
+  margin-right: 111px;
 }
 
 .hotels-accomodation-type {
@@ -713,13 +748,14 @@ img {
 }
 
 .hotels-cost-per-day {
-  width: 320px;
+  width: 325px;
+  padding-right: 0;
 }
 
 .hotels-checkbox-wrapper {
   list-style: none;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 23px;
   padding: 0;
 }
 
@@ -727,23 +763,119 @@ img {
   margin-bottom: 30px;
 }
 
-.hotel-filter-form label {
+.hotel-filter-checkbox {
   position: relative;
+  padding-left: 40px;
 }
 
-.hotel-filter-form label::before {
+.hotel-filter-checkbox::before {
   content: "";
   position: absolute;
   top: -3px;
-  left: -40px;
+  left: 0px;
   width: 27px;
   height: 23px;
   background-image: url(../img/svg/checkbox-off.svg);
   background-repeat: no-repeat;
 }
 
-.hotel-filter-form input:checked + label::before {
+.hotel-filter-form input:checked + .hotel-filter-checkbox::before {
   background-image: url(../img/svg/checkbox-on.svg);
+}
+
+.hotels-cost-controls {
+  display: flex;
+  position: relative;
+  margin-top: 5px;
+  width: 317px;
+  min-height: 37px;
+  border: 2px solid #f6f6f6;
+  border-radius: 2px;
+}
+
+.hotels-cost-controls label {
+  padding-left: 65px;
+  padding-top: 8px;
+}
+
+.hotels-cost-controls input[type="text"] {
+  width: 60px;
+  color: #ffffff;
+  background: none;
+  border: none;
+}
+
+.hotels-cost-controls::after {
+  content: "";
+  width: 2px;
+  height: 22px;
+  position: absolute;
+  right: 152px;
+  top: 6px;
+  background-color: #ffffff;
+}
+
+.hotels-range-controls {
+  position: relative;
+  width: 317px;
+  min-height: 23px;
+  margin-top: 20px;
+}
+
+.hotels-range-controls .scale {
+  width: 317px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  box-sizing: content-box;
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background-color: #1c4f80;
+}
+
+.hotel-filter-button {
+  margin-left: 85px;
+  margin-top: 10px;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.hotel-filter-button:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 .hotel-sorting {
