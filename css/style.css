@@ -11,15 +11,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-
   background-color: #f2f2f2;
-
 }
 
 a {
@@ -38,14 +35,12 @@ img {
 .main-header-logo {
   position: absolute;
   right: 530px;
-  top: -5px;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
-
   background-color: #ffffff;
 }
 
@@ -54,7 +49,6 @@ img {
   font-weight: 700;
   line-height: 26px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -121,14 +115,13 @@ img {
 }
 
 .intro {
- min-height: 510px;
- text-align: center;
- padding-top: 80px;
-
- background-color: #8695a0;
- background-image: url(../img/svg/intro-mask.svg), url(../img/jpg/sedona-overview.jpg);
- background-position: left 50% bottom, 0px -56px;
- background-repeat: no-repeat;
+  min-height: 510px;
+  text-align: center;
+  padding-top: 80px;
+  background-color: #8695a0;
+  background-image: url(../img/svg/intro-mask.svg), url(../img/jpg/sedona-overview.jpg);
+  background-position: left 50% bottom, 0px -56px;
+  background-repeat: no-repeat;
 }
 
 .slogan {
@@ -149,14 +142,13 @@ img {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-
   margin: 0;
   margin-top: 50px;
   padding: 0;
 }
 
 .advantages-item:nth-child(1),
-.advantages-item:nth-child(2){
+.advantages-item:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
 }
@@ -242,10 +234,8 @@ img {
 
 .advantages-sublist {
   display: flex;
-
   padding: 0;
   list-style: none;
-
   background-color: #ffffff;
 }
 
@@ -314,7 +304,6 @@ img {
   width: 400px;
   min-height: 260px;
   padding-top: 45px;
-
   background-color: #eeeeee;
 }
 
@@ -358,7 +347,6 @@ img {
   text-transform: uppercase;
   padding: 31px 140px;
   margin-top: 35px;
-
   background-color: #766357;
   border: none;
 }
@@ -369,9 +357,9 @@ img {
 
 .search-open-button:focus,
 .search-open-button:active {
- color: rgba(255, 255, 255, 0.3);
- background-color: #503e33;
- outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+  outline: none;
 }
 
 .modal-search-form {
@@ -509,7 +497,7 @@ img {
 .guest-minus::before,
 .guest-plus::before {
   content: "";
-  width: 12px;
+  width: 11px;
   height: 3px;
   position: absolute;
   z-index: 3;
@@ -520,7 +508,7 @@ img {
 
 .guest-plus::after {
   content: "";
-  width: 12px;
+  width: 11px;
   height: 3px;
   position: absolute;
   z-index: 3;
@@ -548,11 +536,11 @@ img {
 .hotel-search-form button[type="submit"] {
   padding-left: 197px;
   padding-right: 197px;
-  padding-top:17px;
+  padding-top: 17px;
   padding-bottom: 17px;
   margin-top: 55px;
-  font-size:21px;
-  line-height:26px;
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: white;
@@ -584,7 +572,6 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-
   background-color: rgba(254, 254, 254, 0.9);
 }
 
@@ -684,7 +671,7 @@ img {
   align-items: center;
 }
 
-.footer-copyright b {
+.footer-copyright span {
   margin-right: 10px;
 }
 
@@ -703,7 +690,6 @@ img {
 }
 
 /* Стили для внутренней страницы - начало */
-
 .hotel-filter-form {
   width: 1200px;
   min-height: 215px;
@@ -711,7 +697,6 @@ img {
   padding-left: 72px;
   padding-right: 72px;
   padding-top: 27px;
-
   background-image: url(../img/jpg/filter-background.jpg);
   background-color: #8695a0;
   background-position: center -60px;
@@ -779,7 +764,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.hotel-filter-form input:checked + .hotel-filter-checkbox::before {
+.hotel-filter-form input:checked+.hotel-filter-checkbox::before {
   background-image: url(../img/svg/checkbox-on.svg);
 }
 
@@ -888,7 +873,7 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 12px;
-  line-height:18px;
+  line-height: 18px;
 }
 
 .sorting-found-counter {
@@ -937,7 +922,7 @@ img {
 }
 
 .hotel-sorting-button path:hover {
- fill: #000000;
+  fill: #000000;
 }
 
 .hotel-sorting-button path:focus,
@@ -1021,7 +1006,6 @@ img {
   padding-top: 6px;
   padding-bottom: 5px;
   margin-right: 8px;
-
   background-color: #81b3d2;
 }
 
@@ -1043,7 +1027,6 @@ img {
   padding-right: 16px;
   padding-top: 6px;
   padding-bottom: 5px;
-
   background-color: #766357;
 }
 
@@ -1059,10 +1042,10 @@ img {
 }
 
 .hotels-rating-stars {
- height: 17px;
- background-image: url(../img/svg/star.svg);
- background-repeat: space;
- margin-bottom: 45px;
+  height: 17px;
+  background-image: url(../img/svg/star.svg);
+  background-repeat: space;
+  margin-bottom: 45px;
 }
 
 .rating-amara-resort {
@@ -1089,7 +1072,6 @@ img {
   padding-top: 5px;
   padding-bottom: 5px;
   margin: 0;
-
   background-color: #f2f2f2;
 }
 
