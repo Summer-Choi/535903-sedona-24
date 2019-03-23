@@ -856,8 +856,7 @@ img {
 }
 
 .range-toggle:hover {
-  width: 5px;
-  height: 5px;
+  transform: scale(1.1);
 }
 
 .hotel-filter-button {
