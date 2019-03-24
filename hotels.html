@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -66,10 +66,10 @@
             <legend>Стоимость в сутки (Р):</legend>
             <div class="hotels-cost-controls">
               <label class="min-cost">от
-                <input type="text" name="min-cost" id="min-cost" value="0" pattern="[0-9]">
+                <input type="text" name="min-cost" id="min-cost" value="0" pattern="^[ 0-9]+$">
               </label>
               <label class="max-cost">до
-                <input type="text" name="max-cost" id="max-cost" value="3000" pattern="[0-9]">
+                <input type="text" name="max-cost" id="max-cost" value="3000" pattern="^[ 0-9]+$">
               </label>
             </div>
             <div class="hotels-range-controls">

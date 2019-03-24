@@ -61,6 +61,7 @@ img {
   display: flex;
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 .site-navigation li {
@@ -129,6 +130,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.intro img {
+  margin-top: -4px;
+}
+
 .slogan {
   font-weight: 700;
   font-size: 21px;
@@ -141,7 +146,7 @@ img {
 }
 
 .advantages h2 {
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .advantages-list {
@@ -151,7 +156,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 52px;
   padding: 0;
 }
 
@@ -240,7 +245,7 @@ img {
   padding-left: 65px;
   padding-right: 65px;
   padding-top: 10px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .advantages-sublist {
@@ -253,6 +258,7 @@ img {
 }
 
 .sublist-item p {
+  margin-top: 25px;
   color: #333333;
 }
 
@@ -315,7 +321,7 @@ img {
 
 .advantage-grey {
   width: 400px;
-  min-height: 260px;
+  min-height: 257px;
   padding-top: 45px;
   background-color: #eeeeee;
 }
@@ -339,7 +345,7 @@ img {
   display: block;
   font-size: 30px;
   line-height: 36px;
-  padding-top: 45px;
+  padding-top: 50px;
 }
 
 .search-form p {
@@ -560,7 +566,7 @@ img {
   padding-right: 197px;
   padding-top: 17px;
   padding-bottom: 17px;
-  margin-top: 55px;
+  margin-top: 53px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -633,7 +639,7 @@ img {
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .social-button-twitter::before {
@@ -806,6 +812,15 @@ img {
 .hotel-filter-form input:checked+.hotel-filter-checkbox::before {
   background-image: url(../img/svg/checkbox-on.svg);
 }
+
+.hotel-filter-form input:disabled+.hotel-filter-checkbox::before {
+  background-image: url(../img/svg/checkbox-off-disabled.svg);
+}
+
+.hotel-filter-form input:checked:disabled+.hotel-filter-checkbox::before {
+  background-image: url(../img/svg/checkbox-on-disabled.svg);
+}
+
 
 .hotels-cost-controls {
   display: -webkit-box;
@@ -1102,7 +1117,7 @@ img {
   height: 17px;
   background-image: url(../img/svg/star.svg);
   background-repeat: space;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .rating-amara-resort {
