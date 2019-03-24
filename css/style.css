@@ -357,6 +357,7 @@ img {
 }
 
 .search-open-button {
+  display: inline-block;
   position: relative;
   z-index: 2;
   font-size: 21px;
